@@ -1,6 +1,5 @@
 package cn.jimyoung.leetcode.common.No1116_ZeroEvenOdd;
 
-import java.util.concurrent.Semaphore;
 import java.util.function.IntConsumer;
 
 public class ZeroEvenOdd {
