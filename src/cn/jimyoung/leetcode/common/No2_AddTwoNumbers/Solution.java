@@ -7,17 +7,6 @@ class ListNode {
     ListNode(int x) {
         val = x;
     }
-
-    @Override
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        ListNode temp = this;
-        while (temp != null) {
-            s.append(temp.val);
-            temp = temp.next;
-        }
-        return s.toString();
-    }
 }
 
 public class Solution {
