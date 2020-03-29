@@ -1,4 +1,4 @@
-package cn.jimyoung.leetcode.common.MergeSortedArray;
+package cn.jimyoung.leetcode.common.No88_MergeSortedArray;
 
 import java.util.Arrays;
 
