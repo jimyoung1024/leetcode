@@ -5,7 +5,7 @@ public class Solution {
     final static int INTEGER_MIN_DIV_10 = Integer.MIN_VALUE / 10;
 
     public int myAtoi(String str) {
-        if (str == null || str.isBlank()) {
+        if (str == null || str.isEmpty()) {
             return 0;
         }
 
