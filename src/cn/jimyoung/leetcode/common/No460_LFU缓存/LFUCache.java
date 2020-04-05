@@ -5,6 +5,8 @@ package cn.jimyoung.leetcode.common.No460_LFU缓存;
 
 /**
  * @author Jimyoung
+ * 代码来源https://leetcode-cn.com/problems/lfu-cache/solution/java-13ms-shuang-100-shuang-xiang-lian-biao-duo-ji/
+ * 力扣@Sweetiee
  */
 public class LFUCache {
     /**
