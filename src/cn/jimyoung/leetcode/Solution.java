@@ -1,11 +1,5 @@
 package cn.jimyoung.leetcode;
 
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Queue;
-import java.util.Stack;
-import java.util.concurrent.ConcurrentHashMap;
-
 class TreeLinkNode {
     int val;
     TreeLinkNode left = null;
