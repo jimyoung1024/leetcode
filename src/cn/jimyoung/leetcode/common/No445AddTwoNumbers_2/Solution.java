@@ -29,6 +29,7 @@ public class Solution {
     }
 
     public ListNode add(ListNode l1, ListNode l2, int len1, int len2) {
+        //经处理，len1一定>len2
         ListNode temp = new ListNode(0);
         if ((len1 == 1) && (len2 == 1)) {
             temp.val = (l1.val + l2.val) % 10;
