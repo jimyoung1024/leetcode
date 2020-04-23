@@ -1,4 +1,4 @@
-package cn.jimyoung.leetcode.common.No_跳跃游戏;
+package cn.jimyoung.leetcode.common.No55_跳跃游戏;
 
 
 public class Solution {
