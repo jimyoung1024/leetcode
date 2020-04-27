@@ -1,10 +1,6 @@
 package cn.jimyoung.leetcode.common.No23_合并K个排序链表;
 
-import com.sun.org.apache.bcel.internal.generic.LNEG;
-
 import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
 import java.util.PriorityQueue;
 
 class ListNode {
@@ -46,6 +42,5 @@ public class Solution {
             System.out.println(res.val);
             res = res.next;
         }
-
     }
 }

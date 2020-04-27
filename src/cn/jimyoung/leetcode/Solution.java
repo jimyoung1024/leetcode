@@ -32,4 +32,14 @@ public class Solution {
         }
         return null;
     }
+
+    public static void main(String[] args) {
+        try {
+            Class<?> test = Class.forName("java.lang.String");
+            System.out.println(test);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println(Math.class.getClassLoader());
+    }
 }
