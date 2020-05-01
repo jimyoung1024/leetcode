@@ -21,6 +21,5 @@ public class Test {
         int[] arr1 = {3,3,0,0,1,1};
         int[] arr2 = {2,2,0,0,2,2};
         System.out.println(fun(arr1, arr2));
-        Queue queue = new PriorityQueue();
     }
 }
