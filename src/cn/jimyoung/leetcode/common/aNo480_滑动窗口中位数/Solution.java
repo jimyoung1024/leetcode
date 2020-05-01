@@ -3,7 +3,7 @@ package cn.jimyoung.leetcode.common.aNo480_滑动窗口中位数;
 import java.util.*;
 
 /**
- *
+ * @author Jimyoung
  */
 public class Solution {
 
@@ -36,8 +36,8 @@ public class Solution {
                 lowSubHigh += 2;
             }
 
-            if (i - k + 1 >= 0){
-                System.out.println((i-k+1)+" low.peek: "+low.peek() + " high.peek: "+ high.peek());
+            if (i - k + 1 >= 0) {
+                System.out.println((i - k + 1) + " low.peek: " + low.peek() + " high.peek: " + high.peek());
                 res[i - k + 1] = (lowSubHigh == 0) ? (low.peek() + high.peek()) / 2.0 : low.peek();
             }
 
@@ -46,7 +46,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[] test = {1,2,3,4,2,3,1,4,2};
+        int[] test = {1, 2, 3, 4, 2, 3, 1, 4, 2};
         System.out.println(Arrays.toString(new Solution().medianSlidingWindow(test, 3)));
         /**
          * 预期结果
