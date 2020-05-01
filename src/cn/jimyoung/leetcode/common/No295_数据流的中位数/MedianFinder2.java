@@ -20,8 +20,8 @@ public class MedianFinder2 {
     PriorityQueue<Integer> high;
 
     public MedianFinder2() {
-        low = new PriorityQueue<>(Comparator.comparingInt(o -> o));
-        high = new PriorityQueue<>((o1, o2) -> o2 - o1);
+        low = new PriorityQueue<>((o1, o2) -> o2 - o1);
+        high = new PriorityQueue<>();
     }
 
     public void addNum(int num) {
