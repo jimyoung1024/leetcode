@@ -9,10 +9,14 @@ import java.util.Map;
  * map内保存当前窗口内的字符，根据的key的唯一性，只要不断的put就可以保证窗口中字符的唯一性
  * 唯一需要判断的就是如果map内已经存在的当前i指向的字符，将left更新一下即可
  * 而left的作用也仅仅是为了计算max
+ *
+ * 这是优化版本，Solution2是最直观的滑动窗口版本
  */
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
-        if (s == null || s.isEmpty()) return 0;
+        if (s == null || s.isEmpty()) {
+            return 0;
+        }
         Map<Character, Integer> map = new HashMap<>();
         int left = 0;
         int max = 0;
@@ -27,7 +31,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        String test = "abcabcbb";
+        String test = "abba";
         System.out.println(new Solution().lengthOfLongestSubstring(test));
     }
 }
