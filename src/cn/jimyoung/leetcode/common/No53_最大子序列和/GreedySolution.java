@@ -1,5 +1,8 @@
-package cn.jimyoung.leetcode.common.No53_MaximumSubarray;
+package cn.jimyoung.leetcode.common.No53_最大子序列和;
 
+/**
+ * @author lijinyang
+ */
 public class GreedySolution {
     public int maxSubArray(int[] nums) {
         int len = nums.length;

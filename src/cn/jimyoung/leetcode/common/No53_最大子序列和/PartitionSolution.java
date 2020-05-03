@@ -1,5 +1,8 @@
-package cn.jimyoung.leetcode.common.No53_MaximumSubarray;
+package cn.jimyoung.leetcode.common.No53_最大子序列和;
 
+/**
+ * @author lijinyang
+ */
 public class PartitionSolution {
     public int crossSum(int[] nums, int left, int right, int p) {
         if (left == right) return nums[left];
