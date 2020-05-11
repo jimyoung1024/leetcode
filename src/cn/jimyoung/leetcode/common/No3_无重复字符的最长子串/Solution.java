@@ -9,7 +9,7 @@ import java.util.Map;
  * map内保存当前窗口内的字符，根据的key的唯一性，只要不断的put就可以保证窗口中字符的唯一性
  * 唯一需要判断的就是如果map内已经存在的当前i指向的字符，将left更新一下即可
  * 而left的作用也仅仅是为了计算max
- *
+ * <p>
  * 这是优化版本，Solution2是最直观的滑动窗口版本
  */
 public class Solution {
