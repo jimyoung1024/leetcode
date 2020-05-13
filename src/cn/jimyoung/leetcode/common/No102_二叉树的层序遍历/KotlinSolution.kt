@@ -4,7 +4,7 @@ import cn.jimyoung.leetcode.util.kotlin.TreeNode
 import java.util.*
 import kotlin.collections.ArrayList
 
-class Solution {
+class KotlinSolution {
     fun levelOrder(root: TreeNode?): List<List<Int>> {
         val res = ArrayList<List<Int>>()
         if (root == null) return res

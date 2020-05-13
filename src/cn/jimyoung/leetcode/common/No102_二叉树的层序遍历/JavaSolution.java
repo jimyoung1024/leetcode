@@ -1,25 +1,18 @@
 package cn.jimyoung.leetcode.common.No102_二叉树的层序遍历;
 
+import cn.jimyoung.leetcode.util.java.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-class TreeNode_J {
-    int val;
-    TreeNode_J left;
-    TreeNode_J right;
 
-    TreeNode_J(int x) {
-        val = x;
-    }
-}
-
-public class BinaryTreeLevelOrderTraversal {
-    private List<List<Integer>> levels = new ArrayList<>();
+public class JavaSolution {
+    private final List<List<Integer>> levels = new ArrayList<>();
 
     //递归调用方法
-    private void fun(TreeNode_J node, int level) {
+    private void fun(TreeNode node, int level) {
         if (levels.size() == level) {
             levels.add(new ArrayList<>());
         }
@@ -33,18 +26,18 @@ public class BinaryTreeLevelOrderTraversal {
     }
 
     //递归
-    public List<List<Integer>> levelOrder_Rce(TreeNode_J root) {
+    public List<List<Integer>> levelOrder_Rce(TreeNode root) {
         if (root == null) return new ArrayList<>();
         fun(root, 0);
         return levels;
     }
 
     //非递归
-    public List<List<Integer>> levelOrder_NRce(TreeNode_J root) {
+    public List<List<Integer>> levelOrder_NRce(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null) return res;
 
-        Queue<TreeNode_J> queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         int level = 0;
         while (!queue.isEmpty()) {
@@ -52,7 +45,7 @@ public class BinaryTreeLevelOrderTraversal {
 
             int resLength = queue.size();
             for (int i = 0; i < resLength; i++) {
-                TreeNode_J node = queue.remove();
+                TreeNode node = queue.remove();
 
                 res.get(level).add(node.val);
 
