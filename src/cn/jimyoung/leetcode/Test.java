@@ -1,11 +1,12 @@
 package cn.jimyoung.leetcode;
 
 
+import java.util.HashMap;
+import java.util.Map;
 
 public class Test {
     public static void main(String[] args) {
-        String[] test = new String[]{"123", "123"};
-        String[] test2 = new String[5];
-
+        Map<Integer, Integer> map = new HashMap<>();
+        System.out.println(map.get(0));
     }
 }

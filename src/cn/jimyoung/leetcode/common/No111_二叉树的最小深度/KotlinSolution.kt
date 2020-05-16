@@ -1,11 +1,8 @@
 package cn.jimyoung.leetcode.common.No111_二叉树的最小深度
 
+import cn.jimyoung.leetcode.util.kotlin.TreeNode
 import kotlin.math.min
 
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
 
 class Solution {
     fun minDepth(root: TreeNode?): Int {
