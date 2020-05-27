@@ -4,6 +4,9 @@ import java.util.*
 
 /**
  * 给定一个非空字符串 s，最多删除一个字符。判断是否能成为回文字符串。
+ *
+ * 本解法为递归解法，逻辑没有问题，但是会超时
+ * 超时原因并不是出在递归上，而是因为有很多冗余的计算
  */
 class Solution {
     fun validPalindrome(s: String): Boolean {
@@ -24,9 +27,4 @@ class Solution {
             }
         }
     }
-}
-
-fun main() {
-    val test = "ab"
-    println(Solution().validPalindrome(test))
 }
