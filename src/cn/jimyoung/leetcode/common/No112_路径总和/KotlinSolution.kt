@@ -1,9 +1,7 @@
 package cn.jimyoung.leetcode.common.No112_路径总和
 
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
+import cn.jimyoung.leetcode.util.kotlin.TreeNode
+
 
 class Solution {
     fun hasPathSum(root: TreeNode?, sum: Int): Boolean {
