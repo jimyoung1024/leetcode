@@ -1,4 +1,4 @@
-package cn.jimyoung.leetcode
+package cn.jimyoung.leetcode.test
 
 fun main() {
     val map = HashMap<Int, Int>()
